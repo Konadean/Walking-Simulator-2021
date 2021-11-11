@@ -1,0 +1,23 @@
+1
+Woah! Is that a ^? It's looking a little hungry....Feed ^? (y/n)
+1
+2
+What's a ^ doing here? It's eyes are looking like it wants to devour you. Feed ^? (y/n)
+2
+3
+A wild ^ appears! Use ^? (y/n)
+3
+4
+^_encounter.txt; feed_^_question.txt? (y/n)
+4
+5
+Oh no, it's a ^! Quick, feed it ^ before it gives you a bad yelp review! (y/n)
+5
+6
+A hungry ^ moans "Huuuuumann...Give me ^". Comply? (y/n)
+6
+7
+Like zoinks! That ^ looks like its gonna eat you! Feed ^? (y/n)
+7
+
+

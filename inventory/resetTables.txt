@@ -1,0 +1,6 @@
+junk
+DROP TABLE junk
+junk
+creature
+DROP TABLE creature
+creature

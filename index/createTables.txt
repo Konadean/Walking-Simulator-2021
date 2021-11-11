@@ -1,0 +1,28 @@
+rarity
+CREATE TABLE IF NOT EXISTS rarity (
+    obj_rarity TEXT PRIMARY KEY NOT NULL CHECK (obj_rarity='TRASH' OR obj_rarity='COMMON' OR obj_rarity='RARE' OR obj_rarity='ODD' OR obj_rarity='UNEARTHLY' OR obj_rarity='UNKNOWN'),
+    rate INTEGER NOT NULL
+)
+rarity
+
+junk
+CREATE TABLE IF NOT EXISTS junk (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    junk_rarity TEXT NOT NULL,
+    point_value INTEGER NOT NULL,
+    FOREIGN KEY (junk_rarity) REFERENCES rarity (obj_rarity)
+);
+junk
+
+creature
+CREATE TABLE IF NOT EXISTS creature (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    creature_rarity TEXT NOT NULL,
+    point_value INTEGER NOT NULL,
+    purchase_item TEXT,
+    purchase_cost INTEGER,
+    FOREIGN KEY (creature_rarity) REFERENCES rarity (obj_rarity)
+);
+creature

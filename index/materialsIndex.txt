@@ -1,0 +1,51 @@
+rarity
+INSERT INTO
+    rarity(obj_rarity,rate)
+VALUES
+    ('TRASH', 50),
+    ('COMMON', 30),
+    ('RARE', 15),
+    ('ODD', 4),
+    ('UNEARTHLY', 1),
+    ('UNKNOWN', 0);
+rarity
+
+junk
+INSERT INTO
+    junk(name, junk_rarity, point_value)
+VALUES
+    ('PEBBLE', 'TRASH', 1),
+    ('STICK', 'TRASH', 2),
+    ('BOTTLE CAP', 'TRASH', 3),
+    ('ACORN', 'TRASH', 4),
+    ('SEED', 'TRASH', 2),
+    ('COIN', 'COMMON', 5),
+    ('PLAYING CARD', 'COMMON', 7),
+    ('GOLDEN ACORN', 'RARE', 25),
+    ('TREASURE MAP', 'RARE', 14),
+    ('DIRTY MAG', 'RARE', 69),
+    ('STRANGE INSIGNIA', 'ODD', 150),
+    ('POTENTIAL MURDER WEAPON', 'ODD', -50),
+    ('HOLO-SCROLL', 'UNEARTHLY', 1000),
+    ('CURSED CAMERA', 'UNEARTHLY', 666),
+    ('TENTACLE OF THE DARK LORD', 'UNKNOWN', 100000);
+junk
+
+creature
+INSERT INTO
+    creature(name, creature_rarity, point_value, purchase_item, purchase_cost)
+VALUES
+    ('MOTH', 'TRASH', 1, null, null),
+    ('WORM', 'TRASH', 1, null, null),
+    ('ANT', 'TRASH', 1, null, null),
+    ('SNAIL', 'TRASH', 3, null, null),
+    ('SQUIRREL', 'COMMON', '24', 'ACORN', 6),
+    ('HOUSE SPARROW', 'COMMON', '15', 'SEED', 10),
+    ('FROG', 'COMMON', 10, 'WORM', 3),
+    ('CANADIAN GOOSE', 'COMMON', 50, 'SQUIRREL', 2),
+    ('ANT QUEEN', 'RARE', 30, 'ANT', 10),
+    ('DROP BEAR', 'RARE', 35, 'CANADIAN GOOSE', 1),
+    ('BLOB FISH', 'RARE', 69, 'DIRTY MAG', 1),
+    ('SQUIRREL KING', 'ODD', 100, 'GOLDEN ACORN', 3),
+    ('RODENT GOD', 'UNEARTHLY', '500', 'SQUIRREL KING', 2)
+creature

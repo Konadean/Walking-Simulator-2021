@@ -1,0 +1,17 @@
+junk
+CREATE TABLE IF NOT EXISTS junk (
+    name TEXT PRIMARY KEY NOT NULL,
+    junk_rarity TEXT NOT NULL,
+    point_value INTEGER NOT NULL,
+    owned INTEGER NOT NULL
+);
+junk
+creature
+CREATE TABLE IF NOT EXISTS creature (
+    name TEXT PRIMARY KEY NOT NULL,
+    creature_rarity TEXT NOT NULL,
+    point_value INTEGER NOT NULL,
+    owned INTEGER NOT NULL
+);
+creature
+
